@@ -1,0 +1,13 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  client:
+    register-with-eureka: true  # Allow the Eureka server to register itself
+    fetch-registry: true  # Allow the Eureka server to fetch registry information
+    service-url:
+      defaultZone: http://localhost:8762/eureka  # Replace with the Eureka server's URL
